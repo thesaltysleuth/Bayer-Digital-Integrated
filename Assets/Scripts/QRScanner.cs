@@ -4,11 +4,14 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using ZXing;
+using UnityEngine.SceneManagement;
 
 public class QRScanner : MonoBehaviour
 {
     WebCamTexture webcamTexture;
     string QrCode = string.Empty;
+    public string Product;
+    public string level;
 
     void Start()
     {
@@ -35,7 +38,10 @@ public class QRScanner : MonoBehaviour
                     if (!string.IsNullOrEmpty(QrCode))
                     {
                         Debug.Log("DECODED TEXT FROM QR: " + QrCode);
-                        break;
+                        if (QrCode == Product)
+                        {
+                            SceneManager.LoadScene(level);
+                        }
                     }
                 }
             }
@@ -45,7 +51,7 @@ public class QRScanner : MonoBehaviour
         webcamTexture.Stop();
     }
     
-    private void OnGUI()
+    /*private void OnGUI()
     {
         int w = Screen.width, h = Screen.height;
 
@@ -55,7 +61,8 @@ public class QRScanner : MonoBehaviour
         style.alignment = TextAnchor.UpperLeft;
         style.fontSize = h * 2 / 50;
         style.normal.textColor = new Color(0.0f, 0.0f, 0.5f, 1.0f);
-        string text =QrCode;
+        string text =Product;
         GUI.Label(rect, text, style);
-    }
+
+    }*/
 }

@@ -6,12 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TrackOrder.unity
-    guid: 83d64b3a53f198c44bafe881d8e2f2b6
-  - enabled: 0
+    path: Assets/Scenes/LoginScene.unity
+    guid: e3d341091aafed248b05a097afca0847
+  - enabled: 1
+    path: Assets/Scenes/SelectionMenu.unity
+    guid: 06303546e6a08cf458642b08e6d0cb3a
+  - enabled: 1
     path: Assets/Scenes/QRScanner.unity
     guid: 0a6686806db0ae1468babf2ce64b6b30
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/AskBayer.unity
+    guid: b58caa779492a9a46a39c178f5d63105
+  - enabled: 1
+    path: Assets/Scenes/TrackOrder.unity
+    guid: 83d64b3a53f198c44bafe881d8e2f2b6
+  - enabled: 1
     path: Assets/Scenes/DelaroUsage.unity
     guid: 4eee6d0af87a7c047899d983469bec97
+  - enabled: 1
+    path: Assets/Scenes/LeverageDemo.unity
+    guid: 8ddeaa4d362d4694fab0ccef42245824
+  - enabled: 1
+    path: Assets/Scenes/ProductList.unity
+    guid: b31c611121db19b4daaf5838da421bbd
+  - enabled: 1
+    path: Assets/Scenes/ScannedMenu.unity
+    guid: 7eed12f16053a764481be6a3fc230f5e
   m_configObjects: {}
